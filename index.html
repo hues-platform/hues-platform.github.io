@@ -1,5 +1,93 @@
 <!doctype html>
 <html>
+
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    text-align: center
+}
+
+li {
+    list-style: none; 
+    display: inline;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active), .dropdown:hover .dropbtn {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#contribute">Models</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Modeling tools</a>
+    <div class="dropdown-content">
+      <a href="#">Energy hub optimizer</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Data</a>
+    <div class="dropdown-content">
+      <a href="#">Technology database</a>
+      <a href="#">Swiss energy supply and demand web service</a>
+    </div>
+  </li>
+  <li><a href="#contribute">Code</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+</body>
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -15,21 +103,51 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>HUES Platform</h1>
-        <p>The Holistic Urban Energy Simulation Platform</p>
-
-
+	<p> <img src="HUES_logo.png" alt="HUES logo" align="middle"> </p>
+	<p> <img src="Sidebar_image.png" alt="HUES text" align="left"> </p>
       </header>
-      <section>
-        <h3>
-<a id="welcome-to-the-hues-platform" class="anchor" href="#welcome-to-the-hues-platform" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to the HUES Platform</h3>
 
-<p>The Holistic Urban Energy Simulation (HUES) platform is a modular, extensible simulation and optimization platform for the study of distributed energy systems from the level of buildings to cities. The HUES platform is developed and maintained by the Urban Energy Systems Laboratory at Empa in collaboration with our research partners in the context of the SCCER Future Energy Efficient Buildings &amp; Districts and CCEM SECURE projects.</p>
+</body>
+      <section>
+
+    <br>
+        <h3>
+<a id="welcome-to-the-hues-platform" class="anchor" href="#welcome-to-the-hues-platform" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is the HUES Platform?</h3>
+
+<p>The Holistic Urban Energy Simulation (HUES) Platform is an open source platform to facilitate research on the simulation and optimization of distributed energy systems.  Resources in the HUES Platform include:  </p>
+
+        <h3>
+<a id="welcome-to-the-hues-platform" class="anchor" href="#welcome-to-the-hues-platform" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. Models</h3>
+
+<p>The <b> Model repository </b> includes a number of models for simulating and optimizing building- and district-scale energy systems.  The code for these models is readily accessible, and may be downloaded and extended upon freely. <a style="font-weight:bold; color: #09841C;" href="https://hues.empa.ch/Model_repository">Access the model repository &gt;&gt;&gt;</a> </p>
+
+        <h3>
+<a id="welcome-to-the-hues-platform" class="anchor" href="#welcome-to-the-hues-platform" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. Modeling tools </h3>
+
+<p>The <b>Energy Hub Optimizer</b> is an open source tool for optimizing the design and operation of distributed multi-energy systems at the level of buildings and districts.  The Energy Hub Optimizer is developed in Matlab and the Aimms.  <a style="font-weight:bold; color: #09841C;" href="https://github.com/hues-platform/energy-hub-model-generator-aimms">Access the Energy Hub Optimizer &gt;&gt;&gt;</a> </p>
+
+        <h3>
+<a id="welcome-to-the-hues-platform" class="anchor" href="#welcome-to-the-hues-platform" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. Data</h3>
+
+<p> The <b>Technology database</b> includes data on the technical and economic properties of distributed technologies for energy conversion and storage.  Access to the data in the technology database is unrestricted.  <a style="font-weight:bold; color: #09841C;" href="https://hues.empa.ch/technology_database">Access the technology database &gt;&gt;&gt;</a> </p>
+<p>The <b>Swiss energy supply and demand web service</b> includes aggregated yearly heat demand and solar rooftop PV potential in Switzerland, accessible at either the commune or pixel level. Access to the web service is restricted to participants in the SCCER FEEB&amp;D project.  <a style="font-weight:bold; color: #09841C;" href="http://wisesccer1.unige.ch/">Access the Swiss energy demand and supply web service &gt;&gt;&gt;</a> </p> 
+
+        <h3>
+<a id="welcome-to-the-hues-platform" class="anchor" href="#welcome-to-the-hues-platform" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. Code </h3>
+
+<p>The HUES platform includes a number of code snippets and scripts which may be useful to researchers dealing with the simulation and optimization of distributed energy systems. <a style="font-weight:bold; color: #09841C;" href="https://hues.empa.ch/Code_repository">Access the code repository &gt;&gt;&gt;</a> </p>
+
+<br>   
+<br>
+
+<p><small>Development of the HUES Platform is financially supported by the projects SCCER FEEB&amp;D and CCEM SECURE.</small></p>
+<p> <img src="HUES_Funding2.png" alt="HUES funding" align="left" width="300"> </p>
+
       </section>
-      <footer>
-        <p><small>The HUES Platform is financially supported by the projects SCCER FEEB&D and CCEM SECURE</small></p>
-      </footer>
+
+
     </div>
+
     <script src="javascripts/scale.fix.js"></script>
     
   </body>
